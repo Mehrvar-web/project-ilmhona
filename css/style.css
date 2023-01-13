@@ -1214,7 +1214,7 @@ body {
 
 /* Skills Section Responsive 380px */
 
-@media (max-width: 380px) {
+@media (max-width: 440px) {
     .flex-content {
         display: block;
         height: 200vh;
