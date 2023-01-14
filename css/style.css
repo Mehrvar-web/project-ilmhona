@@ -688,12 +688,10 @@ body {
 #skills {
     width: 100%;
     min-height: 100vh;
-    border: 2px solid red;
     padding: 0 30px;
 }
 
 .skills-title {
-    border: 2px dashed blue;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -707,7 +705,6 @@ body {
     width: 100%;
     height: 92vh;
     display: flex;
-    border: 3px solid purple;
     flex-wrap: wrap;
     position: relative;
 }
@@ -719,18 +716,15 @@ body {
     border-radius: 10px;
     margin-right: 2%;
     padding: 0 3%;
-    /* text-align: center; */
 }
 
 .speaking-block img {
-    /* border: 2px solid red; */
     width: 320px;
     max-width: 100%;
     height: 40%;
 }
 
 .speaking-title {
-    /* border: 2px solid red; */
     max-width: 100%;
     height: 6%;
     text-align: left;
@@ -748,7 +742,6 @@ body {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: auto;
     overflow: hidden;
-    /* border: 2px solid red; */
     max-width: 92%;
     max-height: 32%;
     font-family: "Poppins", sans-serif;
@@ -806,7 +799,6 @@ body {
 }
 
 .flex-item-block {
-    /* border: 3px solid skyblue; */
     width: 65%;
     height: 100%;
     display: flex;
@@ -900,7 +892,6 @@ body {
 .listening-left-block {
     max-width: 50%;
     height: 90%;
-    /* border: 2px solid red; */
 }
 
 .listening-title {
@@ -912,7 +903,6 @@ body {
     font-size: 30px;
     color: #263238;
     padding-left: 4%;
-    /* border: 2px solid green; */
     margin: 2% 0 0 0;
 }
 
@@ -921,7 +911,6 @@ body {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: auto;
     overflow: hidden;
-    /* border: 2px solid red; */
     width: 80%;
     max-height: 32%;
     font-family: "Poppins", sans-serif;
@@ -936,7 +925,6 @@ body {
 }
 
 .listening-btn {
-    /* height: 50px; */
     height: 29%;
     margin-left: 3%;
 }
@@ -1129,15 +1117,13 @@ body {
         font-size: 12px;
         line-height: 18px;
         height: 38%;
-        /* border: 2px solid green; */
-        /* margin-bottom: 8%; */
     }
     .learn-more-btn {
         width: 180px;
         height: 40px;
         font-size: 13px;
         position: absolute;
-        bottom: 14%;
+        bottom: 7%;
     }
     .writing-block {
         position: absolute;
@@ -1214,7 +1200,7 @@ body {
 
 /* Skills Section Responsive 380px */
 
-@media (max-width: 440px) {
+@media (max-width: 380px) {
     .flex-content {
         display: block;
         height: 200vh;
@@ -1271,34 +1257,30 @@ body {
 
 #about {
     width: 100%;
-    min-height: 100vh;
     border: 2px solid green;
     padding: 0 30px;
 }
 
-.skills-flex {
+.about-flex {
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 2px solid red; */
-}
-
-.skills-left-block {
-    width: 50%;
-    /* border: 2px solid red; */
 }
 
 .about-title {
-    /* border: 2px solid red; */
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
-    line-height: 80px;
+    line-height: 60px;
     color: #000000;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
+}
+
+.about-left-block {
+    width: 50%;
 }
 
 .about-text {
@@ -1348,11 +1330,11 @@ body {
     color: #8f95a5;
 }
 
-.skills-right-block {
+.about-right-block {
     max-width: 50%;
 }
 
-.skills-right-block img {
+.about-right-block img {
     max-width: 100%;
     width: 550px;
     height: 550px;
@@ -1362,84 +1344,171 @@ body {
 /* About Section Responsive 992px */
 
 @media (max-width: 992px) {
-    #about {
+    .about-flex {
         width: 100%;
-        min-height: 100vh;
-        border: 2px solid green;
-        padding: 0 30px;
-    }
-    .skills-flex {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        /* border: 2px solid red; */
-    }
-    .skills-left-block {
-        width: 50%;
-        /* border: 2px solid red; */
     }
     .about-title {
-        /* border: 2px solid red; */
-        font-family: "Poppins", sans-serif;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 48px;
-        line-height: 80px;
-        color: #000000;
-        margin-bottom: 2%;
+        font-size: 36px;
     }
     .about-text {
-        /* border: 2px solid greenyellow; */
-        width: 95%;
-        font-family: "Poppins", sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 30px;
-        color: #8f95a5;
-        margin-bottom: 3%;
-        text-align: justify;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: auto;
-        overflow: hidden;
-    }
-    .statistic-block {
-        width: 530px;
-        max-width: 100%;
-        display: flex;
-        justify-content: space-between;
+        font-size: 16px;
+        line-height: 24px;
     }
     .statistic-num {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-family: "Poppins", sans-serif;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 48px;
-        line-height: 80px;
-        color: #2a3246;
+        font-size: 30px;
+        line-height: 70px;
     }
     .statistic-desc {
-        margin: 0 auto;
-        font-family: "Poppins", sans-serif;
-        font-style: normal;
         font-weight: 400;
-        font-size: 20px;
-        line-height: 30px;
-        color: #8f95a5;
+        font-size: 16px;
+        line-height: 24px;
     }
-    .skills-right-block {
-        max-width: 50%;
-    }
-    .skills-right-block img {
+    .about-right-block img {
         max-width: 100%;
-        width: 550px;
-        height: 550px;
+        width: 360px;
+        height: 380px;
+    }
+}
+
+
+/* About Section Responsive 768px */
+
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 30px;
+    }
+    .about-text {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .statistic-num {
+        font-size: 22px;
+    }
+    .statistic-desc {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .about-right-block img {
+        width: 300px;
+        height: 350px;
+    }
+}
+
+
+/* About Section Responsive 620px */
+
+@media (max-width: 620px) {
+    .about-flex {
+        flex-direction: column-reverse;
+        border: 2px solid red;
+        align-items: center;
+        justify-content: space-evenly;
+        position: relative;
+    }
+    .about-left-block {
+        width: 100%;
+        text-align: center;
+    }
+    .about-title {
+        width: 100%;
+        font-size: 30px;
+        position: absolute;
+        top: 3%;
+        text-align: center;
+        margin-bottom: 3%;
+    }
+    .about-text {
+        width: 100%;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 0 0 2% 0;
+    }
+    .statistic-block {
+        margin: 0 auto;
+        width: 90%;
+    }
+    .statistic-num {
+        font-size: 22px;
+        font-size: 24px;
+        outline: none;
+        line-height: 60px;
+    }
+    .statistic-num strong {
+        word-break: break-word;
+        text-align: center;
+    }
+    .statistic-desc {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .about-right-block {
+        max-width: 100%;
+        align-self: center;
+        margin-top: 20%;
+    }
+    .about-right-block img {
+        width: 350px;
+        height: 330px;
+        max-height: 100%;
+    }
+}
+
+
+/* About Section Responsive 380px */
+
+@media (max-width: 380px) {
+    .about-flex {
+        flex-direction: column-reverse;
+        border: 2px solid red;
+        align-items: center;
+        justify-content: space-evenly;
+        position: relative;
+    }
+    .about-left-block {
+        width: 100%;
+        text-align: center;
+    }
+    .about-title {
+        width: 100%;
+        font-size: 30px;
+        position: absolute;
+        top: 3%;
+        text-align: center;
+        margin-bottom: 3%;
+    }
+    .about-text {
+        width: 100%;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 0 0 2% 0;
+    }
+    .statistic-block {
+        margin: 0 auto;
+        width: 90%;
+    }
+    .statistic-num {
+        font-size: 22px;
+        font-size: 24px;
+        outline: none;
+        line-height: 60px;
+    }
+    .statistic-num strong {
+        word-break: break-word;
+        text-align: center;
+    }
+    .statistic-desc {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .about-right-block {
+        max-width: 100%;
+        align-self: center;
+        margin-top: 20%;
+    }
+    .about-right-block img {
+        width: 350px;
+        height: 330px;
+        max-height: 100%;
     }
 }
 
