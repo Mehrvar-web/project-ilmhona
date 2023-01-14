@@ -705,7 +705,7 @@ body {
 
 .flex-content {
     width: 100%;
-    height: 85vh;
+    height: 92vh;
     display: flex;
     border: 3px solid purple;
     flex-wrap: wrap;
@@ -1268,6 +1268,100 @@ body {
 
 
 /* About Section CSS Start */
+
+#about {
+    width: 100%;
+    min-height: 100vh;
+    border: 2px solid green;
+    padding: 0 30px;
+}
+
+.skills-flex {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.skills-left-block {
+    width: 50%;
+    /* border: 2px solid red; */
+}
+
+.about-title {
+    /* border: 2px solid red; */
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 80px;
+    color: #000000;
+    margin-bottom: 2%;
+}
+
+.about-text {
+    /* border: 2px solid greenyellow; */
+    width: 95%;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #8f95a5;
+    margin-bottom: 3%;
+    text-align: justify;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: auto;
+    overflow: hidden;
+}
+
+.statistic-block {
+    width: 530px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.statistic-num {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 80px;
+    color: #2a3246;
+}
+
+.statistic-desc {
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #8f95a5;
+}
+
+.skills-right-block {
+    max-width: 50%;
+}
+
+.skills-right-block img {
+    max-width: 100%;
+    width: 550px;
+    height: 550px;
+}
+
+
+/* About Section Responsive 992px */
+
+@media (max-width: 992px) {}
 
 
 /* About Section CSS End */
