@@ -1250,7 +1250,6 @@ body {
 
 #about {
     width: 100%;
-    border: 2px solid green;
     padding: 0 30px;
 }
 
@@ -1393,7 +1392,6 @@ body {
 @media (max-width: 620px) {
     .about-flex {
         flex-direction: column-reverse;
-        border: 2px solid red;
         align-items: center;
         justify-content: space-evenly;
         position: relative;
@@ -1503,7 +1501,6 @@ body {
 
 #pricing {
     width: 100%;
-    border: 2px solid orangered;
     padding: 0 30px;
     height: 100vh;
 }
@@ -1522,7 +1519,6 @@ body {
 .pricing-flex {
     width: 100%;
     height: auto;
-    border: 2px solid blue;
     display: flex;
     justify-content: space-between;
 }
