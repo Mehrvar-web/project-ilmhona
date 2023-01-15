@@ -1634,7 +1634,7 @@ body {
 
 @media (max-width: 992px) {
     #pricing {
-        height: 85vh;
+        height: 90vh;
     }
     .pricing-title {
         font-size: 36px;
@@ -1678,7 +1678,7 @@ body {
 
 @media (max-width: 768px) {
     #pricing {
-        height: 70vh;
+        height: 85vh;
     }
     .pricing-title {
         font-size: 30px;
