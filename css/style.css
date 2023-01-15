@@ -8,16 +8,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     /* scroll-behavior: smooth; */
 }
-
-
-/*Dark Mode must Add*/
-
-
-/* html {
-    background-color: #304550;
-} */
 
 
 /* Body */
@@ -1507,6 +1500,325 @@ body {
 
 
 /* Pricing Section CSS Start */
+
+#pricing {
+    width: 100%;
+    border: 2px solid orangered;
+    padding: 0 30px;
+    height: 100vh;
+}
+
+.pricing-title {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 70px;
+    color: #000000;
+    margin-bottom: 3%;
+}
+
+.pricing-flex {
+    width: 100%;
+    height: auto;
+    border: 2px solid blue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing-card {
+    width: 31%;
+    position: relative;
+}
+
+.card-title {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+    color: #263238;
+    text-align: left;
+    margin-bottom: 2%;
+}
+
+.card-text {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    max-height: 100%;
+    overflow: hidden;
+    color: #8f95a5;
+    margin-bottom: 3%;
+}
+
+.card-pay-btn {
+    background: #eeeeee;
+    border: none;
+    border-radius: 5px;
+    padding: 1% 10%;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #546269;
+    text-align: center;
+}
+
+.card-pay-btn>strong {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    color: #263238;
+    text-align: center;
+}
+
+.card-1 {
+    height: 100%;
+    /* border: 2px solid red; */
+}
+
+.card-1 img {
+    max-width: 100%;
+    width: 300px;
+    height: 300px;
+    margin-left: 3%;
+}
+
+.card-2 {
+    /* border: 2px solid green; */
+    max-height: 100%;
+}
+
+.card-2 img {
+    max-width: 100%;
+    width: 300px;
+    height: 300px;
+    margin-left: 3%;
+}
+
+.btn-card-2 {
+    position: absolute;
+    bottom: 0;
+}
+
+.card-3 {
+    /* border: 2px solid purple; */
+    max-height: 100%;
+    position: relative;
+    text-align: right;
+}
+
+.card-3 img {
+    max-width: 100%;
+    width: 300px;
+    height: 300px;
+    margin-left: 4%;
+}
+
+.text-card-3 {
+    text-align: left;
+}
+
+.btn-card-3 {
+    text-align: left;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+/* Pricing Section Responsive 992px */
+
+@media (max-width: 992px) {
+    #pricing {
+        height: 85vh;
+    }
+    .pricing-title {
+        font-size: 36px;
+        line-height: 65px;
+    }
+    .card-title {
+        font-size: 22px;
+        line-height: 36px;
+    }
+    .card-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .card-pay-btn {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .card-pay-btn>strong {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .card-1 img {
+        max-width: 100%;
+        width: 250px;
+        height: 250px;
+    }
+    .card-2 img {
+        max-width: 100%;
+        width: 260px;
+        height: 250px;
+    }
+    .card-3 img {
+        max-width: 100%;
+        width: 250px;
+        height: 250px;
+    }
+}
+
+
+/* Pricing Section Responsive 768px */
+
+@media (max-width: 768px) {
+    #pricing {
+        height: 70vh;
+    }
+    .pricing-title {
+        font-size: 30px;
+    }
+    .card-title {
+        font-size: 20px;
+        line-height: 30px;
+        overflow-wrap: break-word;
+    }
+    .card-text {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .card-pay-btn {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .card-pay-btn>strong {
+        font-size: 22px;
+        line-height: 32px;
+    }
+    .card-1 img {
+        max-width: 100%;
+        width: 200px;
+        height: 200px;
+    }
+    .card-2 img {
+        max-width: 100%;
+        width: 220px;
+        height: 200px;
+    }
+    .card-3 img {
+        max-width: 100%;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+/* Pricing Section Responsive 620px */
+
+@media (max-width: 620px) {
+    #pricing {
+        height: max-content;
+    }
+    .pricing-flex {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+    .pricing-card {
+        width: 70%;
+        text-align: center;
+        margin-bottom: 8%;
+    }
+    .card-1 {
+        height: auto;
+    }
+    .pricing-title {
+        font-size: 30px;
+    }
+    .card-title {
+        text-align: center;
+        width: 100%;
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 5%;
+    }
+    .card-text {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .card-pay-btn {
+        position: relative;
+    }
+    .card-1 img {
+        margin: 0 auto;
+        max-width: 100%;
+        width: 230px;
+        height: 200px;
+    }
+    .card-2 img {
+        max-width: 100%;
+        width: 240px;
+        height: 200px;
+    }
+    .card-3 img {
+        max-width: 100%;
+        width: 230px;
+        height: 200px;
+    }
+}
+
+
+/* Pricing Section Responsive 380px */
+
+@media (max-width: 380px) {
+    .pricing-card {
+        margin-bottom: 10%;
+    }
+    .pricing-title {
+        font-size: 24px;
+    }
+    .card-title {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .card-text {
+        margin-bottom: 7%;
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .card-pay-btn {
+        text-align: center;
+        position: relative;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .card-pay-btn>strong {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .card-1 img {
+        max-width: 100%;
+        width: 210px;
+    }
+    .card-2 img {
+        max-width: 100%;
+        width: 220px;
+    }
+    .card-3 img {
+        max-width: 100%;
+        width: 210px;
+    }
+}
 
 
 /* Pricing Section CSS End */
