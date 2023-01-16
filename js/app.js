@@ -39,7 +39,7 @@ function openPopup() {
         popup.classList.add("open-popup");
         emailInput.value = "";
     } else {
-        emailError.innerHTML = "Please enter a valid email";
+        emailError.innerHTML = "Please fill in the E-mail input field";
     }
 }
 // Close Popup by clicking OK btn

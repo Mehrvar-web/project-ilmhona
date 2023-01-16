@@ -8,8 +8,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
 
-} 
 html {
     scroll-behavior: smooth;
 }
@@ -389,7 +389,6 @@ body {
     letter-spacing: 0.1rem;
     color: #000000;
     position: relative;
- 
 }
 
 .home-text-bulb-block .first-heading-text::first-line {
