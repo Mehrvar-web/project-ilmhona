@@ -8,8 +8,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
     scroll-behavior: smooth;
-    /* scroll-behavior: smooth; */
 }
 
 
@@ -18,6 +20,7 @@
 body {
     width: 100%;
     height: 100%;
+    font-family: "Popins", sans-serif;
 }
 
 
@@ -38,12 +41,13 @@ body {
     background: linear-gradient(#263238, #003, #49515e);
 }
 
-.wrapper {
+
+/* .wrapper {
     margin: 0 auto;
     width: 100%;
     height: 100%;
-    /* border: 2px solid blue; */
-}
+    border: 2px solid blue;
+} */
 
 
 /* Header CSS Start */
@@ -339,7 +343,7 @@ body {
 /* Header CSS End */
 
 
-/* Main Block */
+/* Main Block CSS Start*/
 
 .main {
     width: 100%;
@@ -355,7 +359,6 @@ body {
     min-height: 100vh;
     padding: 0 30px;
     position: relative;
-    /* border: 2px solid green; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -375,8 +378,7 @@ body {
 }
 
 .home-text-bulb-block .first-heading-text {
-    width: 460px;
-    /* border: 2px solid red; */
+    width: 450px;
     height: auto;
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -386,7 +388,6 @@ body {
     letter-spacing: 0.1rem;
     color: #000000;
     position: relative;
-    /* -webkit-text-stroke: 1px gold; */
 }
 
 .home-text-bulb-block .first-heading-text::first-line {
@@ -581,7 +582,6 @@ body {
         justify-content: space-evenly;
         align-items: center;
         flex-direction: column-reverse;
-        border: 5px solid blue;
         text-align: center;
     }
     .home-text-bulb-block .first-heading-text {
@@ -1822,9 +1822,449 @@ body {
 
 /* Contact Section CSS Start */
 
-#contact {}
+#contact {
+    width: 100%;
+    height: 100vh;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
 
-.cntact-flex {}
+.contact-flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+}
+
+.contact-img-block {
+    width: 40%;
+}
+
+.contact-img-block img {
+    max-width: 100%;
+    width: 500px;
+    height: 480px;
+}
+
+.contact-right-block {
+    width: 60%;
+    height: 70%;
+}
+
+.contact-title {
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 75px;
+    color: #000000;
+    margin-bottom: 3%;
+}
+
+.contact-text {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #8f95a5;
+    margin-bottom: 5%;
+}
+
+form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 3%;
+    position: relative;
+}
+
+.email-input {
+    box-sizing: border-box;
+    width: 55%;
+    height: 70px;
+    border: 2px solid #8f95a5;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8f95a5;
+    padding: 0 0 0 3%;
+}
+
+.email-input:focus {
+    font-size: 17px;
+    color: #000000;
+}
+
+#email-error {
+    font-weight: 400;
+    font-size: 16px;
+    position: absolute;
+    bottom: -25px;
+    margin-left: 3%;
+    transition: all 0.5s;
+}
+
+#subscribe-btn {
+    width: 33%;
+    height: 70px;
+    background: #263238;
+    border-radius: 10px;
+    border-color: #8f95a5;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+}
+
+#subscribe-btn::before {
+    content: "";
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+#subscribe-btn:hover {
+    color: #263238;
+    border: none;
+}
+
+#subscribe-btn:hover::before {
+    height: 100%;
+    background: gold;
+}
+
+
+/* Contact Section Respponsive 992px */
+
+@media (max-width: 992px) {
+    #contact {
+        height: 75vh;
+    }
+    .contact-img-block img {
+        max-width: 100%;
+        width: 430px;
+        height: 390px;
+    }
+    .contact-title {
+        font-size: 36px;
+    }
+    .contact-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .email-input {
+        width: 55%;
+        height: 55px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    #subscribe-btn {
+        width: 33%;
+        height: 55px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+
+/* Contact Section Respponsive 768px */
+
+@media (max-width: 768px) {
+    .contact-img-block img {
+        max-width: 100%;
+        width: 380px;
+        height: 360px;
+    }
+    .contact-title {
+        font-size: 30px;
+    }
+    .contact-text {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .email-input {
+        width: 55%;
+        height: 50px;
+        font-size: 12px;
+        line-height: 18px;
+        border-radius: 5px;
+    }
+    #subscribe-btn {
+        width: 33%;
+        height: 50px;
+        font-size: 13px;
+        line-height: 20px;
+        border-radius: 5px;
+    }
+    #subscribe-btn::before {
+        border-radius: 5px;
+    }
+}
+
+
+/* Contact Section Respponsive 620px */
+
+@media (max-width: 620px) {
+    #contact {
+        height: 100vh;
+    }
+    .contact-flex {
+        height: 100%;
+        flex-direction: column;
+        position: relative;
+        text-align: center;
+    }
+    .contact-img-block {
+        margin-top: 25%;
+        width: 100%;
+    }
+    .contact-img-block img {
+        max-width: 100%;
+        width: 360px;
+        height: 340px;
+    }
+    .contact-right-block {
+        width: 100%;
+    }
+    .contact-title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 30px;
+        line-height: 70px;
+    }
+    .contact-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    form {
+        width: 100%;
+        justify-content: space-between;
+        position: relative;
+    }
+    .email-input {
+        width: 100%;
+        height: 60px;
+        font-size: 14px;
+        line-height: 20px;
+        border-radius: 10px;
+        position: relative;
+    }
+    #subscribe-btn {
+        position: absolute;
+        right: 0;
+        width: 35%;
+        height: 60px;
+        line-height: 20px;
+        border-radius: 10px;
+        font-size: 16px;
+        line-height: 24px;
+        border: none;
+    }
+    #subscribe-btn::before {
+        border-radius: 10px;
+    }
+}
+
+
+/* Contact Section Respponsive 380px */
+
+@media (max-width: 380px) {
+    #contact {
+        height: max-content;
+    }
+    .contact-img-block img {
+        max-width: 100%;
+        width: 270px;
+        height: 250px;
+    }
+    .contact-title {
+        font-size: 24px;
+    }
+    .contact-text {
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+    }
+    form {
+        width: 100%;
+        height: 135px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .email-input {
+        font-size: 12px;
+        line-height: 18px;
+        border-radius: 5px;
+        position: relative;
+    }
+    #subscribe-btn {
+        position: relative;
+        width: 100%;
+        border-radius: 5px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    #subscribe-btn::before {
+        border-radius: 5px;
+    }
+}
+
+
+/* Popup Css Start*/
+
+.popup {
+    width: 400px;
+    background: #192a34;
+    border-radius: 6px;
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 3;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+}
+
+.popup img {
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.popup h2 {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 30px 0 15px;
+}
+
+.popup p {
+    line-height: 22px;
+}
+
+.popup button {
+    width: 100%;
+    margin-top: 40px;
+    padding: 10px 0;
+    background: gold;
+    color: #ffffff;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 0 3px 30px rgb(93, 85, 29);
+}
+
+
+/* Popup Responsive 768px */
+
+@media(max-width: 768px) {
+    .popup {
+        width: 350px;
+    }
+    .popup h2 {
+        font-size: 26px;
+    }
+    .popup p {
+        font-size: 14;
+        line-height: 20px;
+    }
+    .popup button {
+        font-size: 18px;
+    }
+}
+
+
+/* Popup Responsive 620px */
+
+@media(max-width: 620px) {
+    .popup {
+        width: 300px;
+    }
+    .popup h2 {
+        font-size: 20px;
+    }
+    .popup p {
+        font-size: 13;
+        line-height: 20px;
+    }
+    .popup button {
+        font-size: 16px;
+    }
+}
+
+
+/* Popup Responsive 380px */
+
+@media(max-width: 380px) {
+    .popup {
+        width: 250px;
+    }
+    .popup h2 {
+        font-size: 16px;
+    }
+    .popup p {
+        width: 100%;
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .popup button {
+        font-size: 14px;
+    }
+}
+
+
+/* Popup Css End*/
 
 
 /* Contact Section CSS End */
+
+
+/* Main Block CSS End*/
+
+
+/* Footer Block CSS Start*/
+
+
+/* Footer Block CSS End*/
+
+
+/* Footer Block CSS End*/
+
+
+/* Footer Block CSS End*/

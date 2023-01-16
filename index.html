@@ -152,22 +152,49 @@
                 </div>
             </section>
             <!-- Pricing Section End -->
+
             <!-- Contact Section Start -->
             <section id="contact">
-                <div class="contact-flex"></div>
+
+                <div class="contact-flex">
+                    <div class="contact-img-block">
+                        <img src="./img/contact-us.png" alt="Contact Us">
+                    </div>
+                    <div class="contact-right-block">
+                        <h2 class="contact-title">Contact Us</h2>
+                        <p class="contact-text">Discover your current English level by taking our free online English test.Sign up to our newsletter for learning tips and free resources</p>
+
+                        <form action="#contact">
+                            <input type="email" placeholder="Enter Your E-mail" class="email-input" onkeyup="validateEmail()">
+                            <button type="submit" id="subscribe-btn" onclick="openPopup()">Subscribe</button>
+                            <span id="email-error"></span>
+
+                        </form>
+                    </div>
+                </div>
+                <!-- Popup - Dialog Box Start-->
+                <div class="popup">
+                    <img src="./img/light-bulb-on.svg" alt="Popup Tick">
+                    <h2>Thank You!</h2>
+                    <p>Your details has been succesfully submitted.Thanks!</p>
+                    <button type="button" onclick="closePopup()">OK</button>
+                </div>
+                <!-- Popup - Dialog Box End-->
             </section>
+
+
             <!-- Contact Section End -->
 
         </main>
         <!-- Main End -->
 
         <!-- Footer Start -->
-        <footer class="footer"></footer>
+        <footer class="footer "></footer>
         <!-- Footer End -->
     </div>
     <!-- Wrapper End -->
     <!-- Script App JS -->
-    <script src="./js/app.js"></script>
+    <script src="./js/app.js "></script>
 </body>
 
 </html>
