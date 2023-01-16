@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Britlex - Learn Any Foreign Language</title>
+    <!--Link of AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Style Css -->
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 
@@ -14,29 +17,29 @@
     <div class="wrapper">
         <!-- Headert Start -->
         <header class="header">
-            <div class="logo">
+            <div class="logo" data-aos="fade-right">
                 <a href="#"><img src="./img/britlex-logo.svg" alt="Logo"></a>
             </div>
-            <div id="toggle"></div>
+            <div id="toggle" data-aos="fade-left"></div>
             <div id="navbar">
                 <ul>
-                    <li>
+                    <li data-aos="zoom-in-down">
                         <a href="#home">Home</a>
                     </li>
-                    <li>
+                    <li data-aos="zoom-in-down">
                         <a href="#skills">Skills</a>
                     </li>
-                    <li>
+                    <li data-aos="zoom-in-down">
                         <a href="#about">About Us</a>
                     </li>
-                    <li>
+                    <li data-aos="zoom-in-down">
                         <a href="#pricing">Pricing</a>
                     </li>
-                    <li>
+                    <li data-aos="zoom-in-down">
                         <a href="#contact">Contacts</a>
                     </li>
                     <li>
-                        <a href="#" class="talk-btn">Let’s Talk</a>
+                        <a href="#" class="talk-btn" data-aos="fade-down-left">Let’s Talk</a>
                     </li>
                 </ul>
             </div>
@@ -48,16 +51,16 @@
             <!-- Home Section Start -->
             <section id="home">
                 <div class="home-left-side">
-                    <div class="home-text-bulb-block">
+                    <div class="home-text-bulb-block" data-aos="fade-down-right">
                         <h1 class="first-heading-text">Learn Any Foreign Language</h1>
                         <div class="img-bulb"></div>
                     </div>
-                    <p>
+                    <p data-aos="fade-right">
                         With our teachers who write a program for each student, you will be able to make your first sketch after the first lesson.
                     </p>
-                    <button class="get-started-btn">Get started</button>
+                    <button class="get-started-btn" data-aos="zoom-in-right">Get started</button>
                 </div>
-                <div class="home-right-side">
+                <div class="home-right-side" data-aos="fade-down">
                     <img src="./img/home.png" alt="HomeMainIMG">
                 </div>
             </section>
@@ -65,9 +68,9 @@
 
             <!-- Skills Section Start -->
             <section id="skills">
-                <h2 class="skills-title">Skills</h2>
+                <h2 class="skills-title" data-aos="zoom-in-left">Skills</h2>
                 <div class="flex-content">
-                    <div class="speaking-block">
+                    <div class="speaking-block" data-aos="flip-left">
                         <img src="./img/speaking.png" alt="Speaking Image">
                         <h4 class="speaking-title">Speaking</h4>
                         <br>
@@ -77,20 +80,20 @@
                         </p>
                         <button class="learn-more-btn speaking-btn">Learn more</button>
                     </div>
-                    <div class="flex-item-block">
-                        <div class="writing-block">
+                    <div class="flex-item-block" data-aos="fade-down">
+                        <div class="writing-block" data-aos="zoom-in">
                             <img src="./img/writing.png" alt="Writing Image">
                             <h4 class="write-read-title">Writing</h4>
                             <p class="write-read-text">One of the most important and extensive areas of natural science, the science that studies substances, also their composition</p>
                             <button class="learn-more-btn write-read-btn">Learn more</button>
                         </div>
-                        <div class="reading-block">
+                        <div class="reading-block" data-aos="zoom-in-left">
                             <img src="./img/reading.png" alt="Reading Image">
                             <h4 class="write-read-title">Reading</h4>
                             <p class="write-read-text">Perception and response actions of the user resulting from the use and/or upcoming use of the product, system or service</p>
                             <button class="learn-more-btn write-read-btn">Learn more</button>
                         </div>
-                        <div class="listening-block">
+                        <div class="listening-block" data-aos="zoom-in-left">
                             <div class="listening-left-block">
                                 <h4 class="listening-title">Listening</h4>
                                 <p class="listening-text">Here you can find activities to practise your listening skills. Listening will help you to improve your understanding </p>
@@ -157,16 +160,16 @@
             <section id="contact">
 
                 <div class="contact-flex">
-                    <div class="contact-img-block">
+                    <div class="contact-img-block" data-aos="fade-in">
                         <img src="./img/contact-us.png" alt="Contact Us">
                     </div>
                     <div class="contact-right-block">
                         <h2 class="contact-title">Contact Us</h2>
                         <p class="contact-text">Discover your current English level by taking our free online English test.Sign up to our newsletter for learning tips and free resources</p>
 
-                        <form action="#contact">
+                        <form>
                             <input type="email" placeholder="Enter Your E-mail" class="email-input" onkeyup="validateEmail()">
-                            <button type="submit" id="subscribe-btn" onclick="openPopup()">Subscribe</button>
+                            <button type="button" id="subscribe-btn" onclick="openPopup()">Subscribe</button>
                             <span id="email-error"></span>
 
                         </form>
@@ -193,6 +196,8 @@
         <!-- Footer End -->
     </div>
     <!-- Wrapper End -->
+    <!-- Script Of AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Script App JS -->
     <script src="./js/app.js "></script>
 </body>

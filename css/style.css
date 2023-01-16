@@ -8,8 +8,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
 
+} 
 html {
     scroll-behavior: smooth;
 }
@@ -60,6 +60,7 @@ body {
     align-items: center;
     background: transparent;
     transition: all 0.3s ease-out;
+    overflow: hidden;
 }
 
 
@@ -388,6 +389,7 @@ body {
     letter-spacing: 0.1rem;
     color: #000000;
     position: relative;
+ 
 }
 
 .home-text-bulb-block .first-heading-text::first-line {
@@ -594,8 +596,6 @@ body {
         font-size: 32px;
         line-height: 40px;
         -webkit-text-stroke: 1px gold;
-        /* border: 2px solid red; */
-        /* margin-top: -15%; */
     }
     .home-text-bulb-block .first-heading-text::first-line {
         word-spacing: 0;
@@ -2259,12 +2259,6 @@ form {
 
 
 /* Footer Block CSS Start*/
-
-
-/* Footer Block CSS End*/
-
-
-/* Footer Block CSS End*/
 
 
 /* Footer Block CSS End*/
