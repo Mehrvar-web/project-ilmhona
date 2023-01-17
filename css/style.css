@@ -1219,6 +1219,9 @@ body {
 #about {
     width: 100%;
     padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .about-flex {
@@ -1329,6 +1332,9 @@ body {
 /* About Section Responsive 768px */
 
 @media (max-width: 768px) {
+    #about {
+        height: 85vh;
+    }
     .about-title {
         font-size: 30px;
     }
@@ -1353,6 +1359,9 @@ body {
 /* About Section Responsive 620px */
 
 @media (max-width: 620px) {
+    #about {
+        height: max-content;
+    }
     .about-flex {
         flex-direction: column-reverse;
         align-items: center;
@@ -1698,6 +1707,7 @@ body {
         height: auto;
     }
     .pricing-title {
+        margin-top: 5%;
         font-size: 30px;
     }
     .card-title {
@@ -1740,6 +1750,7 @@ body {
         margin-bottom: 10%;
     }
     .pricing-title {
+        margin-top: 5%;
         font-size: 24px;
     }
     .card-title {
@@ -1947,7 +1958,7 @@ form {
 
 @media (max-width: 768px) {
     #contact {
-        height: max-content;
+        height: 70vh;
     }
     .contact-img-block img {
         max-width: 100%;
@@ -2053,10 +2064,6 @@ form {
 /* Contact Section Respponsive 380px */
 
 @media (max-width: 380px) {
-    #contact {
-        min-height: max-content;
-        margin-bottom: 0;
-    }
     .contact-img-block img {
         margin-top: 12%;
         max-width: 100%;
