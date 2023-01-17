@@ -41,13 +41,13 @@ body {
     background: linear-gradient(#263238, #003, #49515e);
 }
 
-
-/* .wrapper {
+.container {
     margin: 0 auto;
     width: 100%;
     height: 100%;
     border: 2px solid blue;
-} */
+    background: #ffffff;
+}
 
 
 /* Header CSS Start */
@@ -91,7 +91,6 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* border: 2px solid red; */
 }
 
 #navbar ul li {
@@ -104,7 +103,6 @@ body {
     width: 100%;
     text-decoration: none;
     letter-spacing: 2px;
-    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -132,7 +130,6 @@ body {
     text-align: center;
     border: 2px solid #263238;
     border-radius: 5px;
-    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -173,8 +170,6 @@ body {
         height: 45px;
     }
     #navbar ul li a {
-        font-family: "Poppins", sans-serif;
-        font-style: normal;
         font-weight: 500;
         font-size: 16px;
     }
@@ -290,9 +285,7 @@ body {
         color: #fff;
         text-decoration: none;
         letter-spacing: 2px;
-        font-family: "Poppins", sans-serif;
         font-size: 23px;
-        font-style: normal;
         font-weight: 500;
         line-height: 30px;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -381,7 +374,6 @@ body {
 .home-text-bulb-block .first-heading-text {
     width: 450px;
     height: auto;
-    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 70px;
@@ -428,7 +420,6 @@ body {
 .home-left-side p {
     width: 520px;
     height: auto;
-    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
@@ -443,7 +434,6 @@ body {
     background: #263238;
     border: none;
     border-radius: 15px;
-    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -469,7 +459,6 @@ body {
 
 .home-left-side .get-started-btn:hover {
     color: #003;
-    /* border: none; */
 }
 
 .home-left-side .get-started-btn:hover::before {
@@ -566,8 +555,6 @@ body {
         border-radius: 5px;
     }
     .home-right-side img {
-        /* width: 440px;
-        height: 440px; */
         width: 360px;
         height: 360px;
     }
@@ -589,7 +576,6 @@ body {
         width: 100%;
         height: auto;
         text-align: center;
-        font-family: "Poppins", sans-serif;
         font-weight: 600;
         word-break: normal;
         font-size: 32px;
@@ -637,7 +623,6 @@ body {
         line-height: 27px;
     }
     .home-right-side img {
-        /* border: 2px solid red; */
         width: 430px;
         height: 480px;
     }
@@ -648,7 +633,6 @@ body {
 
 @media (max-width: 380px) {
     .home-text-bulb-block .first-heading-text {
-        font-family: "Poppins", sans-serif;
         -webkit-text-stroke: 0.7px gold;
         font-size: 24px;
         line-height: 36px;
@@ -684,7 +668,6 @@ body {
 }
 
 .skills-title {
-    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
@@ -720,7 +703,6 @@ body {
     max-width: 100%;
     height: 6%;
     text-align: left;
-    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
@@ -736,7 +718,6 @@ body {
     overflow: hidden;
     max-width: 92%;
     max-height: 32%;
-    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -755,7 +736,6 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -821,7 +801,6 @@ body {
 .write-read-title {
     max-width: 100%;
     height: 8%;
-    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
@@ -837,7 +816,6 @@ body {
     overflow: hidden;
     max-width: 95%;
     max-height: 22%;
-    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -889,7 +867,6 @@ body {
 .listening-title {
     max-width: 100%;
     height: 20%;
-    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
@@ -905,7 +882,6 @@ body {
     overflow: hidden;
     width: 80%;
     max-height: 32%;
-    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -938,8 +914,6 @@ body {
         margin-bottom: 8%;
     }
     .speaking-title {
-        font-family: "Poppins", sans-serif;
-        font-style: normal;
         font-weight: 600;
         font-size: 22px;
     }
@@ -961,8 +935,6 @@ body {
         margin-bottom: 5%;
     }
     .write-read-title {
-        font-family: "Poppins", sans-serif;
-        font-style: normal;
         font-weight: 600;
         font-size: 22px;
     }
@@ -1009,8 +981,6 @@ body {
         margin-bottom: 10%;
     }
     .speaking-title {
-        font-family: "Poppins", sans-serif;
-        font-style: normal;
         font-weight: 600;
         font-size: 20px;
     }
@@ -1032,8 +1002,6 @@ body {
         margin-bottom: 8%;
     }
     .write-read-title {
-        font-family: "Poppins", sans-serif;
-        font-style: normal;
         font-weight: 600;
         font-size: 20px;
         margin-bottom: 12%;
@@ -1076,22 +1044,20 @@ body {
 @media (max-width: 620px) {
     #skills {
         width: 100%;
-        min-height: 100vh;
     }
     .flex-content {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        width: 100%;
+        height: max-content;
         position: relative;
         height: 100vh;
+        border: 2px solid red;
     }
     .speaking-block {
         width: 48%;
         height: 49%;
         position: absolute;
         top: 0;
-        left: 0;
-        margin-right: 2%;
+        left: 0%;
     }
     .speaking-block img {
         width: 150px;
@@ -1100,8 +1066,6 @@ body {
         margin-bottom: 0;
     }
     .speaking-title {
-        font-family: "Poppins", sans-serif;
-        font-style: normal;
         font-weight: 600;
         font-size: 18px;
     }
@@ -1117,10 +1081,14 @@ body {
         position: absolute;
         bottom: 7%;
     }
+    .flex-item-block {
+        width: 100%;
+    }
     .writing-block {
         position: absolute;
         top: 0;
-        right: -2%;
+        left: 52%;
+        right: 0;
         width: 48%;
         height: 49%;
     }
@@ -1131,8 +1099,6 @@ body {
         margin-bottom: 5%;
     }
     .write-read-title {
-        font-family: "Poppins", sans-serif;
-        font-style: normal;
         font-weight: 600;
         font-size: 18px;
         margin-bottom: 5%;
@@ -1205,7 +1171,8 @@ body {
         left: 0;
     }
     .speaking-block img {
-        width: 100%;
+        width: 85%;
+        margin-left: 5%;
     }
     .writing-block {
         width: 100%;
@@ -1215,7 +1182,8 @@ body {
         left: 0;
     }
     .writing-block img {
-        width: 100%;
+        width: 85%;
+        margin-right: 5%;
     }
     .reading-block {
         width: 100%;
@@ -1261,7 +1229,6 @@ body {
 }
 
 .about-title {
-    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
@@ -1276,7 +1243,6 @@ body {
 
 .about-text {
     width: 95%;
-    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -1302,7 +1268,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
@@ -1312,7 +1277,6 @@ body {
 
 .statistic-desc {
     margin: 0 auto;
-    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -1505,7 +1469,6 @@ body {
 
 .pricing-title {
     text-align: center;
-    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
@@ -1527,7 +1490,6 @@ body {
 }
 
 .card-title {
-    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
@@ -1538,7 +1500,6 @@ body {
 }
 
 .card-text {
-    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -1554,7 +1515,6 @@ body {
     border: none;
     border-radius: 5px;
     padding: 1% 10%;
-    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -1564,7 +1524,6 @@ body {
 }
 
 .card-pay-btn>strong {
-    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
@@ -1575,7 +1534,6 @@ body {
 
 .card-1 {
     height: 100%;
-    /* border: 2px solid red; */
 }
 
 .card-1 img {
@@ -1586,7 +1544,6 @@ body {
 }
 
 .card-2 {
-    /* border: 2px solid green; */
     max-height: 100%;
 }
 
@@ -1603,7 +1560,6 @@ body {
 }
 
 .card-3 {
-    /* border: 2px solid purple; */
     max-height: 100%;
     position: relative;
     text-align: right;
@@ -1855,7 +1811,6 @@ body {
 
 .contact-title {
     text-align: left;
-    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
@@ -1865,7 +1820,6 @@ body {
 }
 
 .contact-text {
-    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -1888,7 +1842,6 @@ form {
     height: 70px;
     border: 2px solid #8f95a5;
     border-radius: 10px;
-    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1917,7 +1870,6 @@ form {
     background: #263238;
     border-radius: 10px;
     border-color: #8f95a5;
-    font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -2091,9 +2043,6 @@ form {
 /* Contact Section Respponsive 380px */
 
 @media (max-width: 380px) {
-    #contact {
-        height: max-content;
-    }
     .contact-img-block img {
         max-width: 100%;
         width: 270px;
