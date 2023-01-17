@@ -2238,11 +2238,16 @@ form {
     background: #192a34;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .back-to-top-icon {
     width: 35px;
     height: 35px;
+}
+
+.back-to-top:hover {
+    background: #213946;
 }
 
 
