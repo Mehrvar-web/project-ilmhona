@@ -1914,7 +1914,7 @@ form {
 
 @media (max-width: 992px) {
     #contact {
-        height: 75vh;
+        height: 90vh;
     }
     .contact-img-block img {
         max-width: 100%;
@@ -1946,6 +1946,9 @@ form {
 /* Contact Section Respponsive 768px */
 
 @media (max-width: 768px) {
+    #contact {
+        height: max-content;
+    }
     .contact-img-block img {
         max-width: 100%;
         width: 380px;
@@ -1982,16 +1985,18 @@ form {
 
 @media (max-width: 620px) {
     #contact {
-        height: 100vh;
+        height: max-content;
+        margin-bottom: 50px;
     }
     .contact-flex {
+        border: 2px solid red;
         height: 100%;
         flex-direction: column;
         position: relative;
         text-align: center;
     }
     .contact-img-block {
-        margin-top: 25%;
+        margin-top: 30%;
         width: 100%;
     }
     .contact-img-block img {
@@ -2004,7 +2009,7 @@ form {
     }
     .contact-title {
         position: absolute;
-        top: 0;
+        top: 5%;
         left: 0;
         right: 0;
         text-align: center;
@@ -2048,13 +2053,19 @@ form {
 /* Contact Section Respponsive 380px */
 
 @media (max-width: 380px) {
+    #contact {
+        min-height: max-content;
+        margin-bottom: 0;
+    }
     .contact-img-block img {
+        margin-top: 12%;
         max-width: 100%;
-        width: 270px;
-        height: 250px;
+        width: 280px;
+        height: 280px;
     }
     .contact-title {
         font-size: 24px;
+        top: 3%;
     }
     .contact-text {
         font-size: 14px;
@@ -2066,6 +2077,7 @@ form {
         height: 135px;
         flex-direction: column;
         justify-content: space-between;
+        margin-top: 4%;
     }
     .email-input {
         font-size: 12px;
