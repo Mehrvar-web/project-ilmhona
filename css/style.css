@@ -2241,9 +2241,37 @@ form {
 }
 
 .back-to-top-icon {
-    width: 30px;
-    height: 30px;
-    color: gold;
+    width: 35px;
+    height: 35px;
+}
+
+
+/*  Back to top Responsive 768px*/
+
+@media(max-width:768px) {
+    .back-to-top {
+        width: 38px;
+        height: 38px;
+        border-radius: 3px;
+    }
+    .back-to-top-icon {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+
+/*  Back to top Responsive 380px*/
+
+@media(max-width:380px) {
+    .back-to-top {
+        width: 28px;
+        height: 28px;
+    }
+    .back-to-top-icon {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 

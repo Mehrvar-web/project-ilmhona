@@ -47,7 +47,7 @@ function closePopup() {
     popup.classList.remove("open-popup");
 }
 
-// Check validation of Email
+// Check validation of Email 
 function validateEmail() {
     if (!emailInput.value.match(pattern)) {
         emailInput.style.outlineColor = "red";
@@ -64,7 +64,35 @@ function validateEmail() {
     }
 }
 
-// Animation On Scroll
+
+// Back to top By click Btn
+const showOnPx = 400;
+const backToTopButton = document.querySelector(".back-to-top");
+
+function scrollContainer() {
+    return document.documentElement || document.body;
+}
+
+document.addEventListener("scroll", function() {
+    if (scrollContainer().scrollTop > showOnPx) {
+        backToTopButton.style.visibility = "visible";
+        backToTopButton.style.transition = "all .5s";
+        backToTopButton.style.opacity = "1";
+    } else {
+        backToTopButton.style.visibility = "hidden";
+        backToTopButton.style.opacity = "0";
+    }
+});
+
+function goToTop() {
+    document.body.scrollIntoView({
+        behavior: "smooth",
+    });
+
+}
+backToTopButton.addEventListener("click", goToTop);
+
+// Animation On Scroll with AOS Library
 
 AOS.init({
     // Global settings:
@@ -86,31 +114,3 @@ AOS.init({
     mirror: false, // whether elements should animate out while scrolling past them
     anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
 });
-
-// Back to top Button
-
-const showOnPx = 700;
-const backToTopButton = document.querySelector(".back-to-top");
-
-function scrollContainer() {
-    return document.documentElement || document.body;
-}
-
-document.addEventListener("scroll", function() {
-    if (scrollContainer().scrollTop > showOnPx) {
-        backToTopButton.style.visibility = "visible";
-        backToTopButton.style.transition = "all .5s ease";
-        backToTopButton.style.opacity = "1";
-    } else {
-        backToTopButton.style.visibility = "hidden";
-        backToTopButton.style.opacity = "0";
-    }
-});
-
-function goToTop() {
-    document.body.scrollIntoView({
-        behavior: "smooth",
-    });
-
-}
-backToTopButton.addEventListener("click", goToTop);
