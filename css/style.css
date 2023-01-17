@@ -1997,7 +1997,6 @@ form {
 @media (max-width: 620px) {
     #contact {
         height: max-content;
-        margin-bottom: 50px;
     }
     .contact-flex {
         height: 100%;
