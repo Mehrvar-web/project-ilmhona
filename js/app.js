@@ -47,7 +47,7 @@ function closePopup() {
     popup.classList.remove("open-popup");
 }
 
-// Check validation of Email 
+// Check validation of Email
 function validateEmail() {
     if (!emailInput.value.match(pattern)) {
         emailInput.style.outlineColor = "red";
@@ -63,7 +63,6 @@ function validateEmail() {
         return true;
     }
 }
-
 
 // Back to top By click Btn
 const showOnPx = 400;
@@ -88,7 +87,6 @@ function goToTop() {
     document.body.scrollIntoView({
         behavior: "smooth",
     });
-
 }
 backToTopButton.addEventListener("click", goToTop);
 
