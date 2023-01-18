@@ -1807,6 +1807,7 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 5%;
+    /* border-bottom: 2px solid blue; */
 }
 
 .contact-img-block {
@@ -1996,6 +1997,7 @@ form {
 @media (max-width: 620px) {
     #contact {
         height: max-content;
+        margin-bottom: 10%;
     }
     .contact-flex {
         height: 100%;
@@ -2099,6 +2101,12 @@ form {
     #subscribe-btn::before {
         border-radius: 5px;
     }
+}
+
+.horizon-line {
+    background: #c4c4c4;
+    border: 1px solid #c4c4c4;
+    margin: 0 30px;
 }
 
 
@@ -2288,7 +2296,10 @@ form {
 
 #footer {
     width: 100%;
-    height: 20vh;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: gold;
 }
 
