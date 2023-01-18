@@ -1383,8 +1383,8 @@ body {
     .about-text {
         width: 100%;
         font-size: 14px;
-        line-height: 20px;
-        margin-bottom: 0 0 2% 0;
+        line-height: 21px;
+        margin-bottom: 2%;
     }
     .statistic-block {
         margin: 0 auto;
@@ -2226,8 +2226,8 @@ form {
 /*  Back to top CSS Start*/
 
 .back-to-top {
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     position: fixed;
     right: 2rem;
     bottom: 2rem;
@@ -2240,8 +2240,8 @@ form {
 }
 
 .back-to-top-icon {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
 }
 
 .back-to-top:hover {
@@ -2253,13 +2253,13 @@ form {
 
 @media(max-width:768px) {
     .back-to-top {
-        width: 38px;
-        height: 38px;
+        width: 40px;
+        height: 40px;
         border-radius: 3px;
     }
     .back-to-top-icon {
-        width: 28px;
-        height: 28px;
+        width: 30px;
+        height: 30px;
     }
 }
 
@@ -2268,12 +2268,12 @@ form {
 
 @media(max-width:380px) {
     .back-to-top {
-        width: 28px;
-        height: 28px;
+        width: 30px;
+        height: 30px;
     }
     .back-to-top-icon {
-        width: 20px;
-        height: 20px;
+        width: 22px;
+        height: 22px;
     }
 }
 
@@ -2285,6 +2285,16 @@ form {
 
 
 /* Footer Block CSS Start*/
+
+#footer {
+    width: 100%;
+    height: 20vh;
+    background: gold;
+}
+
+center {
+    font-size: 18px;
+}
 
 
 /* Footer Block CSS End*/
