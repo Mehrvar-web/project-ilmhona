@@ -359,7 +359,7 @@
     }
     
     .home-text-bulb-block .first-heading-text::first-line {
-        word-spacing: 100px;
+        word-spacing: 200px;
     }
     
     .home-text-bulb-block .img-bulb {
@@ -1002,7 +1002,6 @@
         }
         .flex-content {
             width: 100%;
-            height: max-content;
             position: relative;
             height: 100vh;
         }
@@ -1012,6 +1011,7 @@
             position: absolute;
             top: 0;
             left: 0%;
+            z-index: 1;
         }
         .speaking-block img {
             width: 150px;
